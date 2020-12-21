@@ -5,6 +5,7 @@ node_modules
 build
 dist
 docs
+coverage
 
 # misc
 .DS_Store
@@ -21,3 +22,7 @@ yarn-error.log*
 # editor
 .vscode
 .idea
+
+# lock
+package-lock.json
+yarn.lock
