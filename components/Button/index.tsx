@@ -14,9 +14,9 @@ export interface ButtonProps extends BaseProps {
 }
 
 const SIZE = {
-  default: tw`py-3 px-6`,
+  default: tw`py-2 px-2`,
   small: tw`py-1 px-1`,
-  large: tw`py-4 px-7`,
+  large: tw`py-3 px-3`,
 };
 
 const TYPE = {
@@ -44,7 +44,7 @@ const RING_COLOR = {
 
 export const Button: FC<ButtonProps> = styled.button(
   ({size = 'default', type = 'primary', ring = false}: ButtonProps) => [
-    tw`text-white rounded transition-all`,
+    tw`text-white rounded transition-all focus:outline-none`,
     TYPE[type],
     SIZE[size],
     RING_COLOR[type],
